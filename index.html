@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="Bootstrap/bootstrap.min.css"">
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <title>Practica 10</title>
+</head>
+<body>
+    <header>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Contacto</a>
+            </li>
+          </ul>
+    </header>
+    <article>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/compilador.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/base de datos.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="img/contabilidad.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+        <div class="container">
+            <h1>Mi pagina con Bootstrap</h1>
+            <p>Bootstrap es un framework front-end utilizado para desarrollar aplicaciones web y sitios mobile first,
+                osea, con un layout que se adapta a la pantalla del dispositivo utilizado por el usurario.
+            </p>
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col" class="letras">#</th>
+                        <th scope="col" class="letras">Nombre</th>
+                        <th scope="col" class="letras">Paterno</th>
+                        <th scope="col" class="letras">Materno</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Luis</td>
+                        <td>Ramos</td>
+                        <td>Gomez</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Maria</td>
+                        <td>Castro</td>
+                        <td>Lopez</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Carlos</td>
+                        <td>Sanchez</td>
+                        <td>Diaz</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Compiladores</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+                        <p class="card-text">Un compilador es un programa que traduce código escrito en un lenguaje de programación a otro lenguaje. 
+                          En este tipo de traductor el lenguaje fuente es generalmente un lenguaje de alto nivel y el objeto un lenguaje de bajo nivel, 
+                          como assembly o código máquina.</p>
+                        <a href="https://youtu.be/GAj_t1O03LQ" class="card-link">Que es un compilador?</a>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/GAj_t1O03LQ" title="⚙️¿Qué es un compilador e intérprete en programación? | Diccionario de Programación #03" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Contabilidad</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+                        <p class="card-text">La contabilidad es una disciplina que se encarga de estudiar, medir y analizar el patrimonio, la situación patrimonial económica 
+                          y financiera de una empresa u organización, con el fin de facilitar la toma de decisiones en el seno de la misma y
+                           el control externo.</p>
+                        <a href="https://youtu.be/ugxCocs75zE" class="card-link">Que es contabilidad?</a>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/ugxCocs75zE" title="¿Qué es la contabilidad?" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Base de Datos</h5>
+                        <h6 class="card-subtitle mb-2 text-muted"></h6>
+                        <p class="card-text">Una base de datos se encarga no solo de almacenar datos, sino también de conectarlos entre sí en una unidad lógica. 
+                          En términos generales, una base de datos es un conjunto de datos estructurados que pertenecen a un mismo contexto</p>
+                        <a href="https://youtu.be/6S8A-1jBD5Y" class="card-link">Que es base de datos?</a>
+                        <iframe width="350" height="250" src="https://www.youtube.com/embed/6S8A-1jBD5Y" title="¿Qué es una BASE DE DATOS?// características GENERALES" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+        </div>
+    </article>
+    <footer>
+        <div class="row">
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">UBICACION</h5>
+                  <p class="card-text">Tuxtla Gutierrez, Chiapas</p>
+                  
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">CONTACTO</h5>
+                  <p class="card-text">Mayra.vilchis46@unach.mx</p>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+    </footer>
+</body>
+</html>
